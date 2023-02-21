@@ -2,7 +2,7 @@
 
 ![Capture_d_ecran_2023-01-26_134447-removebg-preview](https://user-images.githubusercontent.com/86132511/214882708-3878f866-ddca-4385-a697-226e58dba512.png)
 
-## Maquette
+## Model
 
 ![Capture_decran_2023-01-26_163845](https://user-images.githubusercontent.com/86132511/214882675-a282da4a-d202-499b-82fe-7f3bd8dddd91.png)
 
