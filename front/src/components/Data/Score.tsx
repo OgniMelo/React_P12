@@ -1,5 +1,12 @@
 import { ResponsiveContainer, RadialBarChart, RadialBar } from 'recharts'
 
+/**
+ * Export the function for the chart
+ * @function
+ * @param {Number} props.data - The data used to create the score graph. Default value is 0.
+ * @returns {JSX.Element} A JSX element that represents the ScoreGraph component.
+ */
+
 export default ({ data = 0 }: { data?: number }) => {
 	return (
 		<div className='score'>
