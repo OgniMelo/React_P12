@@ -1,3 +1,8 @@
+/**
+@function
+@returns {JSX.Element} - A JSX element representing a Menu component with icons and a Copyright text.
+*/
+
 export default () => {
 	return (
 		<div className='menu'>
