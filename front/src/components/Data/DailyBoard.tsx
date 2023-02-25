@@ -12,6 +12,13 @@ const defaultData: PropsType = [
 	{ day: '1970-01-07', kilogram: 0, calories: 0 },
 ]
 
+/**
+ * Export the function for the chart
+ * @function
+ * @param {PropsType} [data=defaultData] - Data for the chart. An array of objects containing day, kilogram, and calories properties. Default data is provided.
+ * @returns {JSX.Element} Returns a React JSX component that renders a bar chart of daily activity data. The chart includes a responsive container, bar chart, cartesian grid, x-axis, y-axis, bar, tooltip, and legend. The data is mapped to change the date format to be numbers. The tooltip includes a custom function for customization when hovering over chart elements. The legend also includes a custom function for customization.
+ */
+
 export default ({ data = defaultData }: { data?: PropsType }) => {
 	data.map((data, i) => (data.day = (++i).toString()))
 
