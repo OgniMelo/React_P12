@@ -1,3 +1,8 @@
+/** 
+@function
+@returns {JSX.Element} - A JSX element representing a Navbar component with a logo, title and navigation links.
+*/
+
 export default () => {
 	return (
 		<div className='navbar'>
