@@ -1,19 +1,19 @@
 import { ReactElement, useState } from 'react'
 import { DailyBoard, AverageSession, Performance, Score, Stats } from '../components/Data'
-import useGetData from '../utils/useGetData'
+import getData from '../utils/getData'
 
 export default (): ReactElement => {
-	const [userID, setUserID] = useState<number>(12)
+	const [userId, setUserId] = useState<number>(12)
 
-	const userInformations = useGetData(`/${userID}`)
-	const activityData = useGetData(`/${userID}/activity`)
-	const avgData = useGetData(`/${userID}/average-sessions`)
-	const performanceData = useGetData(`/${userID}/performance`)
+	const userInformations = getData(userId, 'infos')
+	const activityData = getData(userId, 'activity')
+	const avgData = getData(userId, 'average-sessions')
+	const performanceData = getData(userId, 'performance')
 
 	return (
 		<div className='profile-page'>
 			<h2>
-				Bonjour <span onClick={() => setUserID((prev) => (prev === 12 ? 18 : 12))}>{userInformations?.userInfos?.firstName ?? 'Invité'}</span>
+				Bonjour <span onClick={() => setUserId((prev) => (prev === 12 ? 18 : 12))}>{userInformations?.userInfos?.firstName ?? 'Invité'}</span>
 			</h2>
 			{!(userInformations && activityData && avgData && performanceData) ? <p>Une erreur s'est produite lors de la récupération des données</p> : <p>Félicitations ! Vous avez explosé vos objectifs hier 👏</p>}
 			<main id='data'>
