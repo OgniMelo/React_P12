@@ -2,6 +2,11 @@ import { ReactElement, useState } from 'react'
 import { DailyBoard, AverageSession, Performance, Score, Stats } from '../components/Data'
 import getData from '../utils/getData'
 
+/**
+@function
+@returns {React.ReactElement} - A React element containing data for user ID, user information, activity data, average data and performance data.
+*/
+
 export default (): ReactElement => {
 	const [userId, setUserId] = useState<number>(12)
 

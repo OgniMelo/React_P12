@@ -2,86 +2,85 @@
 
 ![Capture_d_ecran_2023-01-26_134447-removebg-preview](https://user-images.githubusercontent.com/86132511/214882708-3878f866-ddca-4385-a697-226e58dba512.png)
 
-## Maquette
+## Model
 
 ![Capture_decran_2023-01-26_163845](https://user-images.githubusercontent.com/86132511/214882675-a282da4a-d202-499b-82fe-7f3bd8dddd91.png)
 
-## Scénario 
+## Scenario 
 
-Vous travaillez en tant que développeur chez SportSee, une startup dédiée au coaching sportif. 
-En pleine croissance, l’entreprise va aujourd’hui lancer une nouvelle version de la page profil de l’utilisateur. 
-Cette page va notamment permettre à l’utilisateur de suivre le nombre de sessions réalisées ainsi que le nombre de calories brûlées.
+You work as a developer at SportSee, a startup dedicated to sports coaching.
+In full growth, the company will today launch a new version of the user profile page.
+This page will in particular allow the user to follow the number of sessions carried out as well as the number of calories burned.
 
-## Contraintes techniques
+## Technical constraints
 
-#### General : 
+#### General :
 
-- Utiliser React pour refaire la page profil.
-- Utilisation de la librairie Recharts ou D3 pour l'intégration des graphiques.
-- Utilisation de Fetch ou Axios pour effectuer les calls API.
-- Rédigé une documentation en anglais
-- Rédigé un Read-me comportant les étapes d’installation ainsi que les prérequis du projet
-- Utiliser des Prototypes pour chacun des composants.
-- Utilisation de Jsdoc pour documenter les fonctions en dehors  des méthodes de cycle de vie.
+- Use React to redo the profile page.
+- Use of the Recharts or D3 library for the integration of graphics.
+- Use of Fetch or Axios to make API calls.
+- Write documentation in English
+- Write a Read-me including the installation steps as well as the project prerequisites
+- Use Prototypes for each component.
+- Using Jsdoc to document functions outside of lifecycle methods.
 
 
-## Stacks utilisées
+## Stacks used
 
 - React
 - Vite
 - Typescript
 - Sass
 
-## Justification du choix des stacks : 
+## Justification for the choice of stacks:
 
 #### Vite :
 
-- Vite améliore le temps de démarrage du serveur de développement en divisant d'abord les modules d'une application en deux catégories : les dépendances et le code source.
+- Vite improves development server startup time by first dividing an application's modules into two categories: dependencies and source code.
 
-#### TypeScript  :
+#### TypeScript:
 
-- Éviter les erreurs cachées 
-- Plus facile de remanier le code sans le casser de manière significative.
-- S’orienter plus facilement dans des systèmes complexes et à grande échelle
-- Code plus facile à maintenir contrairement au Javascript ou sa complexité à croître de manière exponentielle à chaque nouvelle ligne de code.
+- Avoid hidden errors
+- Easier to refactor code without breaking it significantly.
+- Navigate more easily in complex and large-scale systems
+- Code easier to maintain unlike JavaScript or its complexity to grow exponentially with each new line of code.
 
-#### Sass :
+#### Sass:
 
-- Permet de gérer des feuilles de styles de manière dynamique, à l'aide de variables, de conditions, de fonctions, de boucles et d'expressions.
-- Permet d'écrire plus rapidement du CSS.
-- Créer des vendors automatiquement ce qui permet donc d’avoir un rendu identique sur chaque navigateur.
+- Allows you to manage style sheets dynamically, using variables, conditions, functions, loops and expressions.
+- Allows you to write CSS faster.
+- Create vendors automatically, which therefore makes it possible to have an identical rendering on each browser.
 
 
-## Prérequis
+## Prerequisites
 
 - Node.js
 
 
-## Installation Node.js
+## Install Node.js
 
-Lien de téléchargement : https://nodejs.dev/fr/download/
+Download link: https://nodejs.dev/en/download/
 
-## Installer l'application Backend
+## Install Backend App
 
-Pour installer l'application backend, ouvrez un terminal (Git Bash, par exemple) et rendez-vous à l'aide du terminal dans le dossier: (l'emplacementChoisi)/back
+To install the backend application, open a terminal (e.g. Git Bash) and navigate using the terminal to the folder: (chosen location)/back
 
-Executez la commande:
+Run the command:
 
-npm install
+`npm install`
 
-L'installation des différentes dépendances devrait s'effectuer automatiquement.
+The installation of the various dependencies should be done automatically.
 
 
-## Lancer l'application Backend. ( Une fois l'application installée )
+## Launch the Backend application. (Once the application is installed)
 
-`(l'emplacementChoisi)/back`
+`(chosenlocation)/back`
 
-Executez la commande:
+Run the command:
 
 `npm run dev`
 
-L'application devrait se lancer, et si les précédentes étapes ont correctement fonctionné, le terminal devrait vous afficher les informations suivantes:
-
+The application should launch, and if the previous steps worked correctly, the terminal should show you the following information:
 
 ``` bash
 [nodemon] 2.0.20
@@ -93,30 +92,30 @@ Magic happens on port 3000
 ```
 
 
-## Installer l'application Frontend.
+## Install Frontend app.
 
-Pour installer l'application frontend, ouvrez un nouveau terminal, cette fois-ci rendez-vous dans le dossier
+To install the frontend application, open a new terminal, this time go to the folder
 
-`(l'emplacementChoisi)/front`
+`(chosenlocation)/front`
 
-Executez la commande:
+Run the command:
 
 `npm install`
 
-L'installation des différentes dépendances de l'application frontend s'opèrera.
+The installation of the various dependencies of the frontend application will take place.
 
 
-## Lancer l'application Frontend
+## Launch the Frontend application
 
-Comme pour l'application backend, une fois les dépendances installées, dans le dossier
+As for the backend application, once the dependencies are installed, in the folder
 
-`(l'emplacementChoisi)/front`
+`(chosenlocation)/front`
 
-Executez dans votre terminal la commande
+Run the command in your terminal
 
 `npm run dev`
 
-Si les précédentes étapes ont correctement fonctionné, le terminal affichera le message suivant:
+If the previous steps worked correctly, the terminal will display the following message:
 
 ``` bash
 > sportsee@0.0.0 dev

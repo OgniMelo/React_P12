@@ -24,6 +24,13 @@ const defaultData: PropsType = {
 	],
 }
 
+/**
+ * Export the function for the chart
+ * @function
+ * @param {PropsType} [data=defaultData] - Data for the chart
+ * @returns {JSX.Element} A JSX element representing the performance chart component.
+ */
+
 export default ({ kind = defaultData.kind, data = defaultData.data }: PropsType) => {
 	data!.map((data) => (data && typeof data.kind === 'number' ? (data.kind = kind![data.kind]) : null))
 

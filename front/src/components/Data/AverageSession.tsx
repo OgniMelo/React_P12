@@ -17,6 +17,13 @@ const defaultData: PropsType = [
 
 const days: { [index: number]: string } = { 1: 'L', 2: 'M', 3: 'M', 4: 'J', 5: 'V', 6: 'S', 7: 'D' }
 
+/**
+ * Export the function for the chart
+ * @function
+ * @param {PropsType} [data=defaultData] - Data for the chart
+ * @returns {JSX.Element}
+ */
+
 export default ({ data = defaultData }: { data?: PropsType }) => {
 	data.map((data) => (data && typeof data.day === 'number' ? (data.day = days[data.day]) : null))
 
